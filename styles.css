@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header-parent-container{
+    background: #131921;
+}
+.logo-container{
+    width: 20%;
+}
+.search-container{
+    width: 50%;
+}
+.menu-outer-container{
+    width: 30%;
+}
+#search{
+    width: 100%;
+    border: 1px solid black;
+    border-radius:20px;
+}
+.list li{
+    padding-left: 5em;
+    color: white;
+    cursor: pointer;
+}
+.child-body-container{
+    width: 80%;
+    row-gap: 2em;
+}
+.parent-body-container{
+    padding: 1em 0px 0px 2em;
+}
+.size-parent-container{
+    height:80vh;
+}
+.cart-parent-container{
+    height:80vh;
+}
+.contact-parent-container{
+    height:80vh;
+}
+@media only screen and (max-width:650px){
+    .header-parent-container{
+        flex-direction: column;
+    }
+    .hamburger{
+        display: block;
+    }
+    .logo-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list li{
+        padding: 0.5em;
+    }
+    .menu-outer-container{
+        height: auto;
+        width: 100%;
+    }
+    .product-parent-container{
+        margin-top: 2em;
+    }
+    .size-parent-container{
+        flex-direction: column;
+        height:auto;
+    }
+    .Size-child-container{
+        margin-top: 2em;
+    }
+    .cart-parent-container{
+        flex-direction: column;
+        height:auto;
+    }
+    .contact-parent-container{
+        margin-top: 12em;
+        flex-direction: column;
+        height:auto;
+    }
+    .contact-child-container{
+        width: 75%;
+    }
+    .child-cart-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .item-cart-container{
+        flex-direction: column;
+    }
+    .size-child-container{
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+    body {
+        flex-direction: column;
+        min-height: 100vh;
+        position: relative;
+    }
+    .footer-container {
+        position: absolute;
+        bottom: 0;
+    }
+    .blank-space{
+        height: 100px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:760px){
+    #root{
+        min-height: 100vh;
+        position: relative;
+    }
+    .footer-container{
+        position: absolute;
+        bottom: 0;
+    }
+}
